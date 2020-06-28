@@ -1,0 +1,188 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Oxygen', sans-serif;
+}
+body{
+	overflow-x:hidden;
+}
+
+.garenimg{
+	width: 60px;
+	height: 60px;
+	border-radius: 20px;
+	display: none;
+	position: absolute;
+}
+.page{
+	margin-top: 50px;
+	display: inline-block;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	
+}
+
+.league a{
+	text-decoration: none;
+	color: white;
+}
+
+.sett{
+	width: 60px;
+	height: 60px;
+	border-radius: 20px;
+	display: none;
+}
+
+.league{
+	color: white;
+	font-size: 1.6rem;
+	margin-top: 25px;
+	margin-left: 30px;
+	position: absolute;
+	animation: animation 1s 1;
+
+}
+
+.garen{
+	display: none;
+
+}
+
+.frame{
+	width: 150px;
+	height: 150px;
+	display: none;
+	animation: animation 1s 1;
+}
+
+.play{
+	border: 1px solid black;
+	outline: none;
+	border: 2px solid rgb(114, 95, 59);
+	background-color: rgb(7, 20, 36);
+	color: white;
+	width: 120px;
+	height: 45px;
+	margin-bottom: 50px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+.input{
+	border: 2px solid rgb(114, 95, 59);
+	background-color: rgb(7, 20, 36);
+	color: white;
+	outline: none;
+	height: 35px;
+	margin-top: 20px;
+	width: 180px;
+	animation: animation 1s 1;
+	margin-top: 20px;
+	
+}
+.answers button{
+	position: sticky !important;
+	margin: 55px;
+	margin-top: 20px !important;
+	
+}
+
+#hint1, #hint2, #hint3,#hint4, #hint5,#hint6, #hint7,#hint8, #hint9{
+	margin-top: 20px !important;
+}
+
+.answer{
+	
+    border: 2px solid rgb(114, 95, 59);
+	background-color: rgb(7, 20, 36);
+	color: white;
+	outline: none;
+	height: 35px;
+	width: 70px;
+	margin-top: 20px;
+    cursor: pointer;
+}
+.thanks{
+	color: black;
+	text-align: center;
+	display: none;
+	animation: animation 1s 1;
+}
+
+@keyframes animation{
+	0%{
+		opacity: 0;
+	}
+	10%{
+		opacity: 0.1;
+	}
+	20%{
+		opacity: 0.2;
+	}
+	30%{
+		opacity: 0.3;
+	}
+	40%{
+		opacity: 0.4;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	60%{
+		opacity: 0.6;
+	}	
+	70%{
+		opacity: 0.7;
+	}
+	80%{
+		opacity: 0.8;
+	}
+	90%{
+		opacity: 0.9;
+	}
+	100%{
+		opacity: 1;
+	}
+
+}
+
+.main{
+	border: 2px solid rgb(114, 95, 59);
+	background-color: rgb(7, 20, 36);
+	color: white;
+	outline: none;
+	height: 35px;
+	margin-top: 30px;
+	cursor: pointer;
+	width: 80px;
+	animation: animation 1s 1;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.hint{
+	border: 2px solid rgb(114, 95, 59);
+	background-color: rgb(7, 20, 36);
+	color: white;
+	outline: none;
+	height: 35px;
+	margin-left: 55px;
+	margin-top: 20px;
+    width: 70px;
+    cursor: pointer;
+    animation: animation 1s 1;
+}
+@media screen and (max-width: 532px){
+	.hint{
+		margin-top: 20px;
+	}
+
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>League of Ability</title>
+    <meta name="author" content="Tudor Alexandru">
+    <meta name="description" content="League of Ability Game">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="icon" type="image/png" href="teemo.png">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="main-page">
+    <div class="background"></div>
+     <h1 class="welcome">WELCOME</h1>
+        <h1 class="to">TO</h1>
+        <h1 class="leagueof">LEAGUE <span>OF</span> ABILITY</h1>
+        <p class="developed">Developed by <a href="https://tudoralexandru.netlify.com/">Tudor Alexandru</a></p>
+    <nav class="navbar">
+        <h1 class="logo"><a href="index.html" style="text-decoration: none; color: white;">League of Ability</a></h1>
+    </nav>
+    
+  <div class="allcontent" >
+    <h1 id="about" class="about"  data-aos-duration="700" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">About the Game</h1>
+    <p class="abouttext"  data-aos-duration="700" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">Welcome to League of Ability,<br> this minigame consists of guessing the abilities of the champions from the original League of Legends game,<br> an image with an ability of a certain champion will appear<br> and you have to press the "Answer" button and in the box it will appear you will have to enter the name of the champion,<br> if you guess you will go to the next level, press the 'Hint' button if you don't know the answer on first try.</p>
+    <h1 id="start" class="start"  >Start</h1>
+    <p class="letsgo">Click the button to start</p>
+    
+    <div class="page">
+        <button type="button" id="playButton" class="play" >Play</button>
+        <img src="game/frame.png" class="frame" id="frame">
+        <img src="game/framesett.png" class="frame" id="frame2" style="display: none;">
+        <img src="game/framediana.png" class="frame" id="frame3" style="display: none;">
+        <img src="game/framesenna.png" class="frame" id="frame4" style="display: none;">
+        <img src="game/frameatrox.png" class="frame" id="frame5" style="display: none;">
+        <img src="game/framekalista.png" class="frame" id="frame6" style="display: none;">
+        <img src="game/framejhin.png" class="frame" id="frame7" style="display: none;">
+        <img src="game/framejinx.png" class="frame" id="frame8" style="display: none;">
+        <img src="game/frameekko.png" class="frame" id="frame9" style="display: none;">
+        <img src="game/framevolibear.png" class="frame" id="frame10" style="display: none;">
+        <div class="garen" id="garen">
+        <input type="text" name="garen" value="" class="input" id="input" placeholder="Enter your answer">
+        <center><h2 class="thanks" id="thanks">THANKS FOR PLAYING</h2></center>
+        <center><a href="index.html"><button type="button" id="main" class="main" style="display: none;">Main Menu</button></a></center>
+        <!-- ANSWER BUTTONS -->	
+            <button type="button" id="button" class="answer" >Answer</button>
+            <button type="button" id="hint" class="hint" style="display: none;">HINT</button>
+            <button type="button" id="hint1" class="hint" style="display: none;">HINT</button>
+            <button type="button" id="hint2" class="hint" style="display: none;">HINT</button>
+            <button type="button" id="hint3" class="hint" style="display: none;">HINT</button>
+            <button type="button" id="hint4" class="hint" style="display: none;">HINT</button>
+            <button type="button" id="hint5" class="hint" style="display: none;">HINT</button>
+            <button type="button" id="hint6" class="hint" style="display: none;">HINT</button>
+            <button type="button" id="hint7" class="hint" style="display: none;">HINT</button>
+            <button type="button" id="hint8" class="hint" style="display: none;">HINT</button>
+            <button type="button" id="hint9" class="hint" style="display: none;">HINT</button>
+
+        <div class="answers">
+            <button type="button" id="button2" class="answer" style="display: none; 
+            position: absolute;
+            left: 190px;
+            top: 0px;">Answer</button>
+            <button type="button" id="button3" class="answer" style="display: none; 
+            position: absolute;
+            left: 190px;
+            top: 0px;">Answer</button>
+            <button type="button" id="button4" class="answer" style="display: none; 
+            position: absolute;
+            left: 190px;
+            top: 0px;">Answer</button>
+            <button type="button" id="button5" class="answer" style="display: none; 
+            position: absolute;
+            left: 190px;
+            top: 0px;">Answer</button>
+            <button type="button" id="button6" class="answer" style="display: none; 
+            position: absolute;
+            left: 190px;
+            top: 0px;">Answer</button>
+            <button type="button" id="button7" class="answer" style="display: none; 
+            position: absolute;
+            left: 190px;
+            top: 0px;">Answer</button>
+            <button type="button" id="button8" class="answer" style="display: none; 
+            position: absolute;
+            left: 190px;
+            top: 0px;">Answer</button>
+            <button type="button" id="button9" class="answer" style="display: none; 
+            position: absolute;
+            left: 190px;
+            top: 0px;">Answer</button>
+            <button type="button" id="button10" class="answer" style="display: none; 
+            position: absolute;
+            left: 190px;
+            top: 0px;">Answer</button>
+        </div>
+	</div>
+</div>
+</div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <script src="script.js"></script>
+    <script src="scriptgame.js"></script>
+</body>
+</html>
