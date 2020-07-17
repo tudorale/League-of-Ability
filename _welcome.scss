@@ -1,0 +1,48 @@
+.hero{
+	height: 100vh;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-attachment: fixed;
+	animation: fromLeft 1s 1;
+    background-repeat: no-repeat !important;
+	background: linear-gradient(rgba(0.5,0.5,0.5,0.7), rgba(0.5,0.5,0.5,0.8)), url('bg-min.jpg');
+}
+
+.hero .into{
+	position: absolute;
+	top: 25%;
+	color: white;
+	font-size: 1.2rem;
+	left: 150px;
+	span{
+		color: #9c4ea8;
+	}
+}
+.wel{
+	margin-bottom: 15px;
+}
+.loa{
+	margin-top: 15px;
+}
+.to{
+	color: #a054ac;
+}
+
+
+@keyframes fromLeft{
+	from{
+		transform: translateX(150%);
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+
+@media screen and (max-width: 740px){
+	.into{
+		left: 40px !important;
+	}
+
+	
+}
+

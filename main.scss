@@ -1,0 +1,37 @@
+@import "welcome";
+@import "navbar";
+@import "about";
+@import "play";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+body{
+	overflow-x: hidden !important;
+}
+
+.page{
+    margin: 0 auto;
+    padding: 0;
+}
+
+// @media screen and (max-height: 600px){
+// 	.into{
+// 		margin-top: 100px;
+// 	}
+// 	.hero, .aboutSection, .playSection{
+// 		height: 600px;
+// 	}
+
+// 	.aboutText{
+// 		margin-top: 100px;
+// 	}
+	
+// }
+
+

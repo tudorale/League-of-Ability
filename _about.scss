@@ -1,0 +1,52 @@
+.aboutSection{
+	height: 100vh;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat !important;
+    display: none;
+    animation: fromLeft 1s 1;
+	background: linear-gradient(rgba(0.5,0.5,0.5,0.7), rgba(0.5,0.5,0.5,0.8)), url('about-min.jpg');
+}
+@keyframes fromLeft{
+	from{
+		transform: translateX(150%);
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+.aboutText{
+	color: white;
+	position: absolute;
+	top: 13%;
+	padding: 1px 60px 1px 60px;
+	margin-left: 290px;
+	flex-direction: column;
+
+}
+.aboutText p{
+	margin-top: 25px;
+	text-align: center;
+	margin-left: -200px;
+	font-size: 1.3rem;
+}
+.aboutText p:nth-child(1){
+	font-size: 1.6rem;
+}
+@keyframes fromLeft{
+	from{
+		transform: translateX(150%);
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+
+
+@media screen and (max-width: 500px){
+	.aboutText{
+		padding: 0px 15px 0px 15px !important;
+	}
+}
+
