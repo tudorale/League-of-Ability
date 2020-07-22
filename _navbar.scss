@@ -28,7 +28,7 @@
 .home:before{
 	content: "home";
 	position: absolute;
-	top: 28px;
+	top: 35px;
 	left: 80px;
 	animation: test 1s 1 ease;
 	display: none;
@@ -37,7 +37,7 @@
 .about:before{
 	content: "about";
 	position: absolute;
-	top: 95px;
+	top: 103px;
 	left: 80px;
 	animation: test 1s 1 ease;
 	display: none;
@@ -46,7 +46,7 @@
 .play:before{
 	content: "play";
 	position: absolute;
-	top: 165px;
+	top: 175px;
 	left: 80px;
 	animation: test 1s 1 ease;
 	display: none;
@@ -100,7 +100,7 @@
 .home:hover{
 	background-color: #f2f2f2;
 	.homeIcon{
-		color: black ;
+		stroke: black;
 	}
 	&:before{
 		color: black;
@@ -111,7 +111,7 @@
 .about:hover{
 	background-color: #f2f2f2;
 	.aboutIcon{
-		color: black;
+		stroke: black;
 	}
 	&:before{
 		color: black;
@@ -120,7 +120,7 @@
 .play:hover{
 	background-color: #f2f2f2;
 	.playIcon{
-		color: black;
+		stroke: black;
 	}
 	&:before{
 		color: black;
@@ -131,8 +131,8 @@
 	font-size: 32px;
 	text-align: center;
 	margin-top: 20px;
-	margin-left: -75px;
-	color: grey;
+	margin-left: -70px;
+	stroke: grey;
 	transition: all 250ms ease-in-out;
 }
 
@@ -162,13 +162,20 @@
 		margin-top: 7px;
 	}
 	.homeIcon, .playIcon, .aboutIcon{
-		margin-left: 0px;
+		width: 40px;
+		margin-left: -20px;
 	}
 	.links{
+		position: static;
+		width: auto;
 		display: flex;
 		flex-direction: row;
-		top: 0px;
-		left: 77%;
+		height: 20px;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+		float: right;
+		margin-top: -70px;
 	}
 	.about, .play{
 		margin-left: 25px !important;
@@ -178,7 +185,7 @@
 	.home:hover{
 		background-color: white;
 		.homeIcon{
-			color: black;
+			stroke: black;
 		}
 		&:before{
 			display: none;
@@ -188,7 +195,7 @@
 	.about:hover{
 		background-color: white;
 		.aboutIcon{
-			color: black;
+			stroke: black;
 		}
 		&:before{
 			display: none;
@@ -197,7 +204,7 @@
 	.play:hover{
 		background-color: white;
 		.playIcon{
-			color: black;
+			stroke: black;
 		}
 		&:before{
 			display: none;
@@ -206,18 +213,18 @@
 
 	
 .links .home{
-	width: 90px;
+	width: 40px;
 	cursor: pointer;
 	transition: all 500ms ease;
 }
 
 .links .about{
-	width: 90px;
+	width: 40px;
 	cursor: pointer;
 	transition: all 500ms ease;
 }
 .links .play{
-	width: 90px;
+	width: 40px;
 	cursor: pointer;
 	transition: all 500ms ease;
 }
