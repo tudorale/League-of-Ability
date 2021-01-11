@@ -4,4 +4,4 @@ This website contains a minigame for league of legends players, it consists in g
 # Preview
 Website: https://github.com/tudorale/LeagueOfAbility
 
-Author: tudorale.github.io
+Author: https://tudorale.github.io/portfolio/
